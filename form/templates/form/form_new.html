@@ -1,0 +1,34 @@
+{% extends "form/base.html" %}
+{% block content %}
+    <section class="registerform_section">
+    <h1 class="col-md-3">New Registration</h1>
+        <div class="container">
+
+            <div class="row">
+
+                <form class="form_center" method="post">
+                    {% csrf_token %}
+                    <label>Name:</label>
+                    {{ form.name }}
+                    <label>Phone no:</label>
+                    {{ form.number }}
+                    <label>Address:</label>
+                    {{ form.address }}
+                    <label>Emailid:</label>
+                    {{ form.email }}
+                    <label>DateofJoining:</label>
+                    {{ form.dateofjoining }}
+                    <label>Duration(Months):</label>
+                    {{ form.duration }}
+                    <label>Fee(discussed):</label>
+                    {{ form.fee }}
+                    <label>Room number:</label>
+                    {{ form.room_number }}
+                    <button type="submit">Register</button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

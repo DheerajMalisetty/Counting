@@ -1,0 +1,6 @@
+{% extends 'form/base.html' %}
+{% block content %}
+    {% for user in room_list %}
+        <li><a href="{% url 'form:room_detail' user.room_number %}">{{ user.room_number }}</a></li>
+    {% endfor %}
+{% endblock %}

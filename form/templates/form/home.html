@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-7">
+    <h1>Welcome</h1>
+    <a href="{% url 'form:form_new' %}">Register</a>
+    <a href="{% url 'form:customer_list' %}">Customers registered</a>
+    <a href="{% url 'form:room_list' %}">Rooms present</a>
+    <label></label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

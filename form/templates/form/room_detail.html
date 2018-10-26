@@ -1,0 +1,10 @@
+{% extends 'form/base.html' %}
+{% block content %}
+    {{ customer.room_number }}
+    {{ customer.members }}
+
+    {% for i in members %}
+        {{ i.name }}
+    {% endfor %}
+
+{% endblock %}
